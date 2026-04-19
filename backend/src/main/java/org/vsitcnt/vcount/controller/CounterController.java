@@ -1,6 +1,7 @@
 package org.vsitcnt.vcount.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("/api/counter")
-@CrossOrigin(origins = { "${FRONTEND_URL:http://localhost:5173}", "localhost" })
+@CrossOrigin(origins = { "${FRONTEND_URL}", "localhost" })
 public class CounterController {
     @Autowired
     private CounterRepository repository;

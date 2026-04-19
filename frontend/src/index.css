@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 227 23% 95%; /* Latte Base #eff1f5 */
+    --foreground: 234 16% 35%; /* Latte Text #4c4f69 */
+
+    --card: 228 17% 83%; /* Latte Surface0 #ccd0da */
+    --card-foreground: 234 16% 35%;
+
+    --popover: 228 17% 83%;
+    --popover-foreground: 234 16% 35%;
+
+    --primary: 267 83% 58%; /* Latte Mauve #8839ef */
+    --primary-foreground: 227 23% 92%; /* Latte Crust #dce0e8 */
+
+    --secondary: 228 17% 83%;
+    --secondary-foreground: 234 16% 35%;
+
+    --muted: 228 11% 65%; /* Latte Overlay0 */
+    --muted-foreground: 233 10% 47%; /* Latte Subtext0 #6c6f85 */
+
+    --accent: 228 17% 83%;
+    --accent-foreground: 234 16% 35%;
+
+    --destructive: 347 87% 44%; /* Latte Red */
+    --destructive-foreground: 227 23% 92%;
+
+    --border: 228 17% 77%; /* Latte Surface1 */
+    --input: 228 17% 77%;
+    --ring: 267 83% 58%;
+
+    --radius: 6px;
+
+    --sidebar-background: 227 23% 95%;
+    --sidebar-foreground: 234 16% 35%;
+    --sidebar-primary: 267 83% 58%;
+    --sidebar-primary-foreground: 227 23% 92%;
+    --sidebar-accent: 228 17% 83%;
+    --sidebar-accent-foreground: 234 16% 35%;
+    --sidebar-border: 228 17% 77%;
+    --sidebar-ring: 267 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  }
+}
